@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,11 +8,12 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<html lang="en">
+
+<body>
     <header class="site-header">
         <img src="logo.svg" alt="Logo" class="logo" />
         <nav class="nav">
-            <button type="button"> <a href="contract port.html "/> Contract Portal </button>
+            <button type="button"> <a href="main.html"/> Home </button>
             <button type="button">Admin</button>
             <button type="button">About</button>
         </nav>
@@ -19,19 +22,18 @@
         <div class="dropdown-wrap">
             <label for="action-select" class="visually-hidden">Choose action</label>
             <select id="action-select" class="dropdown-select">
+                <option value="main.html">Home</option>
+                <option value="Admin.html">Admin</option>
                 <option value="" disabled selected>Select action</option>
-                <option value="Home">Home</option>
-                <option value="load">Admin</option>
-                <option value="validate">About</option>
+                <option value="about.html">About</option>
             </select>
         </div>
     </header>
-</head>
-<body>
     <main>
         <h1>Welcome to ContractCom</h1>
         <a  img src="WILL DOC\ image \logo.png" alt="Logo" />
         
     </main>
+    <Footer></Footer>
 </body>
 </html>
