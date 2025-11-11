@@ -12,10 +12,7 @@
 <body>
     <header class="site-header">
         <img src="logo.svg" alt="Logo" class="logo" />
-        <nav class="nav">
-            <button type="button"> <a href="main.html"/> Home </button>
-            <button type="button">Admin</button>
-            <button type="button">About</button>
+    
         </nav>
 
         <!-- Dropdown: choose an action -->
@@ -24,14 +21,14 @@
             <select id="action-select" class="dropdown-select">
                 <option value="main.html">Home</option>
                 <option value="Admin.html">Admin</option>
-                <option value="" disabled selected>Select action</option>
+                <option value="users.html" >Users</option>
                 <option value="about.html">About</option>
             </select>
         </div>
     </header>
     <main>
         <h1>Welcome to ContractCom</h1>
-        <a  img src="WILL DOC\ image \logo.png" alt="Logo" />
+        
         
     </main>
     <Footer></Footer>
