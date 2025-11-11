@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header class="site-header">
+        <img src="logo.svg" alt="Logo" class="logo" />
+        <nav class="nav">
+            <button type="button">Home</button>
+            <button type="button">Admin</button>
+            <button type="button">About</button>
+        </nav>
+
+        <!-- Dropdown: choose an action -->
+        <div class="dropdown-wrap">
+            <label for="action-select" class="visually-hidden">Choose action</label>
+            <select id="action-select" class="dropdown-select">
+                <option value="" disabled selected>Select action</option>
+                <option value="Home">Home</option>
+                <option value="load">Admin</option>
+                <option value="validate">About</option>
+            </select>
+        </div>
+    </header>
+</head>
+<body>
+    <main>
+        <h1>Welcome to ContractCom</h1>
+        <a  img src="WILL DOC\ image \logo.png" alt="Logo" />
+        
+    </main>
+</body>
+</html>
