@@ -1,0 +1,83 @@
+header {
+    background-color: #083b66;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #7bbbe2;
+}
+
+H1{
+    color: navy;
+    height: 20px;
+    text-align: center;
+}
+
+/* Header and logo */
+.site-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.logo{
+    width: 72px;
+    height: auto;
+    display: block;
+}
+.title-wrap h1{
+    margin: 0;
+    font-size: 1.6rem;
+    color: #082a47;
+}
+.tagline{
+    margin: 2px 0 0 0;
+    font-size: 0.9rem;
+    color: #083b66;
+    opacity: 0.95;
+}
+
+/* Navigation buttons (simple) */
+.nav button{
+    background: #0a4b78;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.nav button:hover{ opacity: 0.92; }
+
+/* Dropdown styling */
+.dropdown-wrap{ margin-left: auto; }
+.dropdown-select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(8,59,102,0.85);
+    background: #e9f6ff;
+    color: #082a47;
+    font-size: 0.95rem;
+    min-width: 160px;
+}
+.dropdown-select:focus{ outline: 2px solid rgba(11,86,135,0.25); }
+
+.visually-hidden{ position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+
+main h2{
+    text-align: center;
+    color: #082a47;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px){
+    .logo{ width: 56px; }
+    .title-wrap h1{ font-size: 1.2rem; }
+}

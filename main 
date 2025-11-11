@@ -1,9 +1,16 @@
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContractCom</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
 <html lang="en">
     <header class="site-header">
         <img src="logo.svg" alt="Logo" class="logo" />
         <nav class="nav">
-            <button type="button">Home</button>
+            <button type="button"> <a href="contract port.html "/> Contract Portal </button>
             <button type="button">Admin</button>
             <button type="button">About</button>
         </nav>
