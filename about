@@ -1,13 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ContractCom</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="script" href="script.js" />
 </head>
-    <body>
-        <header class="site-header">
+
+
+<body>
+    <header class="site-header">
         <img src="logo.svg" alt="Logo" class="logo" />
 
         <!-- Dropdown: choose an action -->
@@ -27,10 +31,10 @@
             <button type="button">Admin</button>
             <button type="button">About</button>
         </nav>
-        <h2>Welcome, to Admin!</h2>
-        <p>Use the navigation menu to manage users, view reports, and configure settings.</p>
+        <h1>Hello User </h1>
+        <p>Have you come to check your contract?</p>
+        
     </main>
-       <Footer></Footer> 
-    </body>
-
+    <Footer></Footer>
+</body>
 </html>
