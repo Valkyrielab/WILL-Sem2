@@ -13,8 +13,6 @@
 <body>
     <header class="site-header">
         <img src="logo.svg" alt="Logo" class="logo" />
-    
-        </nav>
 
         <!-- Dropdown: choose an action -->
         <div class="dropdown-wrap">
