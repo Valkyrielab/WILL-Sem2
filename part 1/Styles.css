@@ -1,5 +1,5 @@
 header {
-    background-color: #083b66;
+    background-color: #083c6647;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@ header {
 body{
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #7bbbe2;
+    background-color: #7bbae243;
 }
 
 H1{
@@ -30,6 +30,63 @@ H1{
     height: auto;
     display: block;
 }
+/* Desktop nav (visible on medium+ screens) */
+.main-nav{
+    display: flex;
+    gap: 10px;
+    margin-left: 12px;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #fff;
+    background: rgba(10,75,120,0.95);
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+.main-nav a:hover{ opacity: 0.95; }
+
+/* Burger button */
+.burger{
+    margin-left: auto;
+    display: none; /* shown on small screens via media query */
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+.burger:focus{ outline: 2px solid rgba(11,86,135,0.25); }
+.burger .burger-line{
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #082a47;
+    margin: 4px 0;
+}
+
+/* Mobile nav panel */
+.mobile-nav{
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    background: rgba(255,255,255,0.95);
+    border: 1px solid rgba(8,59,102,0.12);
+    position: absolute;
+    right: 12px;
+    top: 70px;
+    min-width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(8,59,102,0.12);
+    z-index: 40;
+}
+.mobile-nav.open{ display: flex; }
+.mobile-nav a{
+    color: #082a47;
+    text-decoration: none;
+    padding: 8px 6px;
+    border-radius: 6px;
+}
+.mobile-nav a:hover{ background: #e9f6ff; }
 .title-wrap h1{
     margin: 0;
     font-size: 1.6rem;
@@ -80,4 +137,7 @@ main h2{
 @media (max-width: 480px){
     .logo{ width: 56px; }
     .title-wrap h1{ font-size: 1.2rem; }
+    /* show burger on small screens and hide desktop nav */
+    .burger{ display: block; }
+    .main-nav{ display: none; }
 }

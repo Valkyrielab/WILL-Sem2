@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContractCom</title>
+    <link rel="stylesheet" href="Styles.css" />
+</head>
+    <body>
+        <header class="site-header">
+            <img src="logo.svg" alt="Logo" class="logo" />
+
+            <!-- Desktop navigation -->
+            <nav class="main-nav">
+                <a href="main.html">Home</a>
+                <a href="Admin.html">Admin</a>
+                <a href="users.html">Users</a>
+                <a href="about.html">About</a>
+            </nav>
+
+            <!-- Hamburger button (visible on small screens) -->
+            <button class="burger" id="burger" aria-expanded="false" aria-controls="mobile-nav">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="visually-hidden">Open menu</span>
+            </button>
+        </header>
+
+        <!-- Mobile navigation panel (hidden by default) -->
+        <nav id="mobile-nav" class="mobile-nav" aria-hidden="true">
+            <a href="main.html">Home</a>
+            <a href="Admin.html">Admin</a>
+            <a href="users.html">Users</a>
+            <a href="about.html">About</a>
+        </nav>
+    <main>
+        <nav class="nav">
+            <button type="button"> Home </button>
+            <button type="button">Admin</button>
+            <button type="button">About</button>
+        </nav>
+        <h1>Welcome to ContractCom</h1>
+        <p>Use the navigation menu to manage users, view reports, and configure settings.</p>
+    </main>
+       <Footer></Footer>
+
+    <script>
+        // Burger toggle for mobile nav
+        (function () {
+            const burger = document.getElementById('burger');
+            const mobileNav = document.getElementById('mobile-nav');
+            if (!burger || !mobileNav) return;
+
+            function setOpen(open) {
+                burger.setAttribute('aria-expanded', String(open));
+                mobileNav.setAttribute('aria-hidden', String(!open));
+                mobileNav.classList.toggle('open', open);
+            }
+
+            burger.addEventListener('click', function () {
+                const isOpen = burger.getAttribute('aria-expanded') === 'true';
+                setOpen(!isOpen);
+            });
+
+            // Close mobile nav when a link is clicked (optional)
+            mobileNav.addEventListener('click', function (e) {
+                if (e.target.tagName === 'A') setOpen(false);
+            });
+        })();
+    </script>
+
+    </body>
+</html>
